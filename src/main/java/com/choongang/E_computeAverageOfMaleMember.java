@@ -5,8 +5,8 @@ public class E_computeAverageOfMaleMember {
     public double computeAverageOfMaleMember(List<Member> members) {
         // TODO:
         return members.stream()
-                .filter(n -> n.getGender().equals("Male"))
-                .mapToInt(n -> n.getAge())
+                .filter(member -> member.getGender().equals("Male"))
+                .mapToInt(member -> member.getAge())
                 .average()
                 .orElse(0.0);
     }

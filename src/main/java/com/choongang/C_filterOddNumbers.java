@@ -6,7 +6,7 @@ public class C_filterOddNumbers {
     public List<Integer> filterOddNumbers(List<Integer> list) {
         // TODO:
         return list.stream()
-                .filter(n -> n % 2 == 0)
+                .filter(el -> el % 2 == 0)
                 .collect(Collectors.toList());
     }
 }
